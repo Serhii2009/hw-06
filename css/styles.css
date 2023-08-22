@@ -35,6 +35,11 @@ ul {
   padding-left: 0;
 }
 
+/*-----Mobile header-----*/
+
+.mobile-menu {
+}
+
 .second-link {
   color: #2e2f42;
   font-weight: 500;
