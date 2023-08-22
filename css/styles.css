@@ -275,9 +275,10 @@ ul {
 }
 
 .container {
-  width: 1158px;
+  min-width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 @media screen and (min-width: 428px) {
