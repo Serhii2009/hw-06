@@ -270,14 +270,29 @@ ul {
   color: #404bbf;
 }
 
-@media screen and (min-width: 427px) {
+@media screen and (min-width: 767px) {
   .items-two {
-    width: ;
+    width: calc((100% - 72px) / 4);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .items-two {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ul > .items-two {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
   }
 }
 
 .items-two {
-  width: calc((100% - 72px) / 4);
 }
 
 .tel-items {
