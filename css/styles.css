@@ -292,6 +292,12 @@ ul {
   }
 }
 
+@media screen and (min-width: 1158px) {
+  .two-list {
+    display: flex;
+  }
+}
+
 .items-two {
 }
 
