@@ -1110,6 +1110,32 @@ footer > .link {
   gap: 24px;
 }
 
+@media screen and (max-width: 768px) {
+  .customers-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    row-gap: 72px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1158px) {
+  .customers-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .customers-list {
+    display: flex;
+  }
+}
+
 .customers-item {
   width: 168px;
   height: 88px;
