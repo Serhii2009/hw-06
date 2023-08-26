@@ -270,33 +270,56 @@ ul {
   color: #404bbf;
 }
 
-@media screen and (min-width: 767px) {
-  .items-two {
-    width: calc((100% - 72px) / 4);
-  }
+/* --------- */
+
+.two-section {
+  padding: 96px 0;
+}
+.two-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px 24px;
+}
+.items-two {
+  max-width: 396px;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
-  .items-two {
-    width: calc((100% - 24px) / 2);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .ul > .items-two {
+  .two-section {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    row-gap: 72px;
-    column-gap: 24px;
+    justify-content: center;
+  }
+
+  .items-two {
+    flex-basis: calc((100% - 1 * 24px) / 2);
   }
 }
-
 @media screen and (min-width: 1158px) {
-  .two-list {
-    display: flex;
+  .two-section {
+    padding: 120px 0;
+  }
+
+  .items-two {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+  }
+  .title-item {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+  }
+  .title-article {
+    font-weight: 400;
   }
 }
+@media screen and (max-width: 1158px) {
+  .company_info {
+    display: none;
+  }
+}
+
+/* --------- */
 
 @media screen and (min-width: 1158px) {
   .second-list {
@@ -304,6 +327,8 @@ ul {
 }
 
 .items-two {
+  max-width: 396px;
+  align-items: center;
 }
 
 .tel-items {
@@ -716,33 +741,6 @@ ol {
   width: calc((100% - 48px) / 3);
 }
 
-.two-section {
-  padding: 120px 0;
-}
-
-@media screen and (max-width: 1157px) {
-  .two-section {
-    padding: 96px 0;
-  }
-}
-
-@media screen and (max-width: 1157px) {
-  .two-section {
-    padding: 96px 0;
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .two-section {
-    padding: 120px 0;
-  }
-}
-
-.two-list {
-  display: flex;
-  gap: 24px;
-}
-
 .company_info {
   display: flex;
   align-items: center;
@@ -798,12 +796,6 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-weight: 500;
-}
-
-@media screen and (min-width: 1157px) {
-  .title-article {
-    font-weight: 400;
-  }
 }
 
 .mini-title {
@@ -1274,7 +1266,7 @@ footer > .link {
   letter-spacing: 0.04em;
   color: #ffffff;
   background-color: transparent;
-  min-width: 100%;
+  min-width: 100px;
   min-height: 40px;
   flex-shrink: 0;
   padding-left: 16px;
