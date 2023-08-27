@@ -427,7 +427,6 @@ ul {
 
 .foot-info {
   display: block;
-  margin-right: 120px;
 }
 
 nav > .link {
@@ -487,7 +486,8 @@ nav .list .link {
     padding-top: 24px;
     padding-bottom: 24px;
     display: flex;
-    gap: 12px;
+    flex-direction: row;
+    gap: 40px;
   }
 }
 
@@ -977,6 +977,7 @@ footer > .link {
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
+  text-align: left;
 }
 
 .menu {
@@ -1250,6 +1251,8 @@ footer > .link {
     text-align: start;
     display: flex;
     flex-wrap: wrap;
+    gap: 72px 24px;
+    width: 582px;
   }
 }
 
@@ -1259,8 +1262,8 @@ footer > .link {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     gap: 72px;
+    justify-content: center;
   }
 }
 
@@ -1371,7 +1374,6 @@ footer > .link {
 }
 
 .footer-subscribe-wrapper {
-  margin-left: 80px;
 }
 
 .footer-subscribe-text {
@@ -1386,9 +1388,20 @@ footer > .link {
 .footer-subscribe-form {
   display: flex;
   gap: 24px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-subscribe-form {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .subscribe-input {
+  width: 100%;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.5;
@@ -1403,6 +1416,26 @@ footer > .link {
   border: 1px solid #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   outline: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1158px) {
+  .subscribe-input {
+    margin-left: 108px;
+    width: 264px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1158px) {
+  .subscribe-button {
+    margin-right: 207px;
+  }
+}
+
+.footer-subscribe-label {
+  width: 100%;
+}
+
+.footer-subscribe-wrapper {
+  width: 100%;
 }
 
 .subscribe-input::placeholder {
