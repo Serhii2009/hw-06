@@ -342,12 +342,6 @@ ul {
   }
 }
 
-@media screen and (max-width: 767.98px) {
-  .header {
-    padding: 20px 16px;
-  }
-}
-
 .items-two {
   max-width: 396px;
   align-items: center;
