@@ -1408,6 +1408,19 @@ footer > .link {
   padding: 72px 24px 24px 24px;
 }
 
+@media screen and (max-width: 427px) {
+  .modal {
+    max-width: 320px;
+    overflow-y: scroll;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    max-width: 408px;
+  }
+}
+
 .modal-close {
   padding: 0;
   position: absolute;
