@@ -49,6 +49,7 @@ ul {
   background-color: transparent;
   border: none;
   margin-left: auto;
+  color: #4d5ae5;
 }
 
 .mobile-menu-icon {
@@ -76,6 +77,22 @@ ul {
 @media screen and (max-width: 767px) {
   .mobile-wrapper {
     max-width: 428px;
+  }
+}
+
+.mobile-menu-tel {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #4d5ae5;
+}
+
+@media screen and (max-width: 427px) {
+  .mobile-menu-tel {
+    font-size: 24px;
   }
 }
 
@@ -117,16 +134,6 @@ ul {
 
 .mobile-menu-icon2 {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mobile-menu-tel {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: #4d5ae5;
 }
 
 .mobile-menu-item:not(:last-child) {
@@ -330,7 +337,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .second-list {
     display: flex;
     gap: 40px;
@@ -437,11 +444,9 @@ nav > .link {
   font-weight: 800;
   letter-spacing: 0.03em;
   line-height: 1.17;
-  margin-right: 76px;
 }
 
 li > .link {
-  color: var(--litext-color);
   letter-spacing: 0.02em;
 }
 
@@ -574,7 +579,7 @@ ol {
   gap: 40px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .second-list {
     display: none;
   }
@@ -1246,7 +1251,7 @@ footer > .link {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: 767px) and (max-width: 1157px) {
   .footer-container {
     text-align: start;
     display: flex;
@@ -1256,7 +1261,7 @@ footer > .link {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .footer-container {
     max-width: 100%;
     text-align: center;
@@ -1326,7 +1331,7 @@ footer > .link {
   justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .footer-subscribe-form {
     display: flex;
     gap: 24px;
@@ -1365,7 +1370,7 @@ footer > .link {
   }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1157px) {
   .footer {
     max-height: 312px;
   }
