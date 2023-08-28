@@ -1400,12 +1400,6 @@ footer > .link {
   }
 }
 
-@media screen and (min-width: 1158px) {
-  .subscribe-input {
-    width: 264px;
-  }
-}
-
 .subscribe-input {
   width: 100%;
   font-weight: 400;
@@ -1425,7 +1419,7 @@ footer > .link {
 }
 
 /*--------------*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .subscribe-input {
     width: 264px;
     margin-left: 108px;
@@ -1439,6 +1433,31 @@ footer > .link {
 @media screen and (min-width: 1158px) {
   .footer {
     max-height: 312px;
+  }
+
+  .footer-container {
+    margin-right: 500px;
+  }
+
+  .subscribe-input {
+    width: 264px;
+  }
+
+  .foot-info {
+    margin-left: 156px;
+    display: inline;
+  }
+
+  .info {
+    width: 264px;
+  }
+
+  .footer-wrapper {
+    margin-left: 120px;
+  }
+
+  .footer-subscribe-wrapper {
+    margin-left: 80px;
   }
 }
 
